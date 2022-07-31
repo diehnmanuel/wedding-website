@@ -265,14 +265,14 @@ Hero
     left: 50%;
   }*/
   .down-arrow a {
-    color: $txt-dark;
+    color: $txt-primary;
   }
   h1 {
-    color: $txt-dark;
+    color: $txt-light;
     margin-bottom: 40px;
   }
   p.intro {
-    color: $txt-dark;
+    color: $txt-light;
     font-size: 20px;
     font-weight: 300;
     margin-bottom: 80px;
@@ -306,11 +306,12 @@ header {
   transition: padding 300ms ease-in-out;
 
   a {
-    color: $txt-light;
+    color: $txt-primary;
     text-transform: uppercase;
     font-size: $nav-font-size;
 
     &.login {
+      color: $txt-primary;
       margin-right: 20px;
     }
   }
@@ -345,7 +346,7 @@ header {
       display: inline;
 
       a {
-        color: $txt-dark;
+        color: $txt-light;
 
         &:hover {
           color: $accent-color;
@@ -821,7 +822,7 @@ RSVP form
         left: 30px;
         transform: translateY(-50%);
       }
-      i.fa-user, i.fa-users, i.fa-envelope, .fa-key {
+      i.fa-user, i.fa-users, i.fa-envelope, .fa-key, i.fa-comment, i.fa-bed, i.fa-heart, i.fa-angle-up {
         font-size: 14px;
         position: absolute;
         top: 50%;
