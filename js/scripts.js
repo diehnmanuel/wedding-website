@@ -243,7 +243,7 @@ $(document).ready(function () {
 function initMap() {
     var location = {lat: 52.887558665790685, lng: 12.833857355874152};
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
-        zoom: 5,
+        zoom: 8,
         center: location,
         scrollwheel: false
     });
