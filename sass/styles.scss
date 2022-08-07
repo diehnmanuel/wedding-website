@@ -253,7 +253,7 @@ Hero
 .hero {
 
   /*For mobile and smaller screens*/
-  @media only screen and (max-width: 1250px){
+  @media only screen and (max-width <= 1250px){
     //min-height: 1000px;
     background: url('../img/background4.jpeg') center center;
     -webkit-background-size: cover;
@@ -261,6 +261,7 @@ Hero
     -o-background-size: cover;
     background-size: cover;
     position: relative;
+    background-color: blue;
   }
 
   /*For desktop*/
@@ -272,6 +273,7 @@ Hero
     -o-background-size: cover;
     background-size: cover;
     position: relative;
+    background-color: green;
   }
 
   /*.rsvp-btn {
