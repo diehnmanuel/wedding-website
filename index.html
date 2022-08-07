@@ -123,7 +123,9 @@
                 <p>Bitte gebt uns bis zum 01.03.2023 eine Rückmeldung! </p>
                 <form id="rsvp-form" class="rsvp-form"
                       action="https://script.google.com/macros/s/AKfycbyMeI3Zp2w6S7oR0WT95zlD300PgRVKUm7mmWqvVNvpBFpam9GNgF8fngCpmUJgAs4mgw/exec"
-                      method="POST">
+                      method="POST"
+                      onsubmit="return validateForm()"
+                >
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
@@ -149,7 +151,14 @@
 <!--                            </div>-->
                             <div class="form-input-group">
                                 <i class="fa fa-angle-up"></i>
-                                <input list="browsers" name="teilnahme" class="" placeholder="Teilnahme" required>
+                                <input
+                                        list="browsers"
+                                        name="teilnahme"
+                                        class=""
+                                        placeholder="Teilnahme"
+                                        pattern="^Ja$\|^Nein$"
+                                        required
+                                >
                                     <datalist id="browsers">
                                       <option value="Ja">
                                       <option value="Nein">
@@ -159,7 +168,13 @@
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
                                 <i class="fa fa-heart"></i>
-                                <input list="begleitung_list" name="other" class="" placeholder="Begleitung" required>
+                                <input
+                                        list="begleitung_list"
+                                        name="other" class=""
+                                        placeholder="Begleitung"
+                                        pattern="^Ja$\|^Nein$"
+                                        required
+                                >
                                     <datalist id="begleitung_list">
                                       <option value="Ja">
                                       <option value="Nein">
@@ -192,10 +207,16 @@
                         </div>
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
-                                <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code"
-                                                                class="" min="0"
-                                                                placeholder="Einladungscode"
-                                                                required>
+                                <i class="fa fa-key"></i>
+                                <input
+                                        type="tel"
+                                        name="invite_code"
+                                        id="invite_code"
+                                        class="" min="0"
+                                        placeholder="Einladungscode"
+                                        required
+
+                                >
                             </div>
                         </div>
                     </div>
