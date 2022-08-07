@@ -149,21 +149,21 @@
 <!--                            </div>-->
                             <div class="form-input-group">
                                 <i class="fa fa-angle-up"></i>
-                                    <select name="cars" id="cars">
-                                      <option value="volvo">Volvo</option>
-                                      <option value="saab">Saab</option>
-                                      <option value="mercedes">Mercedes</option>
-                                      <option value="audi">Audi</option>
-                                    </select>
-                                    <input name="teilnahme" class="dropdown"
-                                                                     placeholder="Teilnahme (ja/nein)"
-                                                                     required>
+                                <input list="browsers" name="teilnahme" class="" placeholder="Teilnahme" required>
+                                    <datalist id="browsers">
+                                      <option value="Ja">
+                                      <option value="Nein">
+                                    </datalist>
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
-                                <i class="fa fa-heart"></i><input name="other" class=""
-                                                                     placeholder="Begleitung (ja/nein)">
+                                <i class="fa fa-heart"></i>
+                                <input list="begleitung_list" name="other" class="" placeholder="Begleitung" required>
+                                    <datalist id="begleitung_list">
+                                      <option value="Ja">
+                                      <option value="Nein">
+                                    </datalist>
                             </div>
                         </div>
                     </div>
