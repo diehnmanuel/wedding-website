@@ -265,7 +265,7 @@ Hero
 
   /*For desktop*/
   @media (min-width: 1251px) {
-    min-height: 1800px;
+    min-height: 1000px;
     background: url('../img/background.jpeg') center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -283,11 +283,11 @@ Hero
     color: $txt-primary;
   }
   h1 {
-    color: $txt-light;
+    color: black;
     margin-bottom: 40px;
   }
   p.intro {
-    color: $txt-light;
+    color: black;
     font-size: 20px;
     font-weight: 300;
     margin-bottom: 80px;
@@ -344,7 +344,7 @@ header {
       display: inline;
 
       a {
-        color: white;
+        color: black;
         padding-right: 25px;
 
         &:hover {
@@ -361,7 +361,7 @@ header {
       display: inline;
 
       a {
-        color: white;
+        color: black;
 
         &:hover {
           color: $accent-color;
