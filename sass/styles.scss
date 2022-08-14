@@ -24,7 +24,7 @@ Global Styles
   margin: 0;
 }
 a {
-  color: black;
+  color: $accent-color;
   -webkit-transition-timing-function: ease;
   transition-timing-function: ease;
   -webkit-transition-duration: 200ms;
@@ -274,11 +274,13 @@ Hero
     position: relative;
   }
 
-  /*.rsvp-btn {
-    position: absolute;
-    bottom: 100px;
-    left: 50%;
-  }*/
+  .rsvp-btn {
+    color: white;
+    font-size: 4rem;
+    //position: absolute;
+    //bottom: 100px;
+    //left: 50%;
+  }
   .down-arrow a {
     color: $txt-primary;
   }
@@ -330,11 +332,11 @@ header {
       margin-right: 20px;
     }
   }
-  .logo {
-    display: inline-block;
-  }
+  //.logo {
+  //  display: inline-block;
+  //}
   .logo img {
-    height: 19px;
+    height: 12rem;
   }
   ul.primary-nav {
     margin: 0 0 0 75px;
@@ -362,6 +364,9 @@ header {
 
       a {
         color: white;
+        font-size: 2rem;
+        padding-left: 2rem;
+
 
         &:hover {
           color: $accent-color;
