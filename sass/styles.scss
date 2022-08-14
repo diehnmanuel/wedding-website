@@ -24,7 +24,7 @@ Global Styles
   margin: 0;
 }
 a {
-  color: $accent-color;
+  color: darkolivegreen;
   -webkit-transition-timing-function: ease;
   transition-timing-function: ease;
   -webkit-transition-duration: 200ms;
@@ -803,6 +803,9 @@ Google map
 }
 .pointer-events-auto {
   pointer-events: auto;
+  //.gutshaus{
+  //  color: darkolivegreen;
+  //}
 }
 
 /* ==========================================================================
@@ -845,7 +848,8 @@ RSVP form
         left: 30px;
         transform: translateY(-50%);
       }
-      i.fa-user, i.fa-users, i.fa-envelope, .fa-key, i.fa-comment, i.fa-bed, i.fa-heart, i.fa-angle-up, i.fa-child, i.fa-check {
+      i.fa-user, i.fa-users, i.fa-envelope, .fa-key, i.fa-comment, i.fa-bed, i.fa-heart,
+      i.fa-angle-up, i.fa-child, i.fa-check, i.fa-home, i.fa-dog, i.fa-baby, i.fa-bed{
         font-size: 14px;
         position: absolute;
         top: 50%;

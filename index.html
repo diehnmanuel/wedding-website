@@ -30,8 +30,10 @@
     <link rel="stylesheet" href="css/styles.min.css">
     <link rel="stylesheet" href="css/queries.css">
     <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css", type="text/css">
-<!--    <link rel="stylesheet" href="node_modules/fontawesome-free-6.1.2-web/css/fontawesome.min.css">-->
+<!--    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css", type="text/css">-->
+<!--    <link rel="stylesheet" href="node_modules/font-awesome/css/solid.min.css", type="text/css">-->
+    <link rel="stylesheet" href="node_modules/fontawesome-free-6.1.2-web/css/fontawesome.min.css">
+    <link rel="stylesheet" href="node_modules/fontawesome-free-6.1.2-web/css/solid.min.css">
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
 <body id="top">
@@ -136,9 +138,9 @@
 
     <div class="container">
         <form id="rsvp-form" class="rsvp-form"
-              action="https://script.google.com/macros/s/AKfycbyMeI3Zp2w6S7oR0WT95zlD300PgRVKUm7mmWqvVNvpBFpam9GNgF8fngCpmUJgAs4mgw/exec"
+              action="https://script.google.com/macros/s/AKfycbyyM36W-gfO0r6Lep1nkDPVrj-3URoN_K5u1ODWQMFD18fqOQ_NNuaVnKBNa4rj-KCj3A/exec"
               method="POST"
-              onsubmit="return validateForm()"
+<!--              onsubmit="return validateForm()"-->
         >
             <div class="row">
                 <div class="col-md-4 col-sm-4 col-md-offset-2">
@@ -157,7 +159,6 @@
                                 class="" min="0"
                                 placeholder="Einladungscode (siehe Nachricht)"
                                 required
-
                         >
                     </div>
                 </div>
@@ -171,18 +172,11 @@
 <!--                            </div>-->
                     <div class="form-input-group">
                         <i class="fa fa-check"></i>
-                        <input
-                                list="browsers"
-                                name="teilnahme"
-                                class=""
-                                placeholder="Teilnahme"
-                                pattern="^Ja$\|^Nein$"
-                                required
-                        >
-                            <datalist id="browsers">
-                              <option value="Ja">
-                              <option value="Nein">
-                            </datalist>
+                        <input list="browsers" name="teilnahme" class="" placeholder="Teilnahme (ja/nein)" pattern="^(?:Ja|Nein)$" required>
+                        <datalist id="browsers">
+                          <option value="Ja">
+                          <option value="Nein">
+                        </datalist>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-4">
@@ -191,8 +185,8 @@
                         <input
                                 list="begleitung_list"
                                 name="other" class=""
-                                placeholder="Teilnahme Partner:in"
-                                pattern="^Ja$\|^Nein$"
+                                placeholder="Teilnahme Partner:in (ja/nein)"
+                                pattern="^(?:Ja|Nein)$"
                                 required
                         >
                             <datalist id="begleitung_list">
@@ -205,15 +199,51 @@
             <div class="row">
                 <div class="col-md-4 col-sm-4 col-md-offset-2">
                     <div class="form-input-group">
-                        <i class="fa fa-child"></i><input type="number" name="babies" class=""
+                        <i class="fa-solid fa-baby"></i><input type="number" name="babies" class=""
                                                          placeholder="Babys (0-2 Jahre)" min="0">
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-4">
                     <div class="form-input-group">
-                        <i class="fa fa-users"></i><input type="number" name="children" class="" min="0"
+                        <i class="fa fa-child"></i><input type="number" name="children" class="" min="0"
                                                           max="4"
                                                           placeholder="Kinder (3-8 Jahre)">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-md-offset-2">
+                    <div class="form-input-group">
+                        <i class="fa-solid fa-dog"></i>
+                        <input
+                                list="dog_list"
+                                name="hund"
+                                class=""
+                                placeholder="Hund (ja/nein)"
+                                pattern="^(?:Ja|Nein)$"
+                                required
+                        >
+                        <datalist id="dog_list">
+                          <option value="Ja">
+                          <option value="Nein">
+                        </datalist>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="form-input-group">
+                        <i class="fa fa-home"></i>
+                        <input
+                                list="room_list"
+                                name="room"
+                                class=""
+                                placeholder="Zimmer im Gutshaus (ja/nein)"
+                                pattern="^(?:Ja|Nein)$"
+                                required
+                        >
+                        <datalist id="room_list">
+                          <option value="Ja">
+                          <option value="Nein">
+                        </datalist>
                     </div>
                 </div>
             </div>
@@ -505,21 +535,21 @@
                         <div class="col-md-6">
                             <p>Gutsstraße 24, 16818 Gnewikow</p>
                         </div>
-                        <div class="col-md-6">
-                            <p><i class="fa fa-bed"></i> <a href="https://www.gutshaus-gnewikow.de/">gutshaus-gnewikow</a><br>
-                                <i class="fa fa-mobile"></i> <a href="tel://+493391 402720">+49 339 140 27 20</a></p>
+                        <div class="col-md-6 text-white">
+                            <p><i class="fa fa-bed "></i> <a href="https://www.gutshaus-gnewikow.de/">gutshaus-gnewikow</a><br>
+                                <i class="fa fa-mobile "></i> <a href="tel://+493391 402720">+49 339 140 27 20</a></p>
                         </div>
                     </div>
                     <div class="row text-center">
                         <div class="col-md-6" style="padding: 5px;">
-                            <a class="btn btn-fill btn-small"
+                            <a class="btn btn-accent btn-small"
                                href="https://m.uber.com/ul/?action=setPickup&client_id=
                                Yh7Dl6SjB56RY2JuuZF8ttVa6ryFV78W&pickup=my_location&dropoff[formatted_address]=
                                Fortune%20Park%20Panchwati%20-%20Hotels%20in%20Kolkata%2C%20Howrah%2C%20West%20Bengal%2C%20India&dropoff[latitude]=
                                22.593276&dropoff[longitude]=88.270277"><i
                                     class="fa fa-taxi"></i>&nbsp;&nbsp;Book Uber</a>
                         </div>
-                        <a class="btn btn-accent btn-small" id="btn-show-map"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Show
+                        <a class="btn btn-accent btn-small btn-show-map" id="btn-show-map"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Show
                             map</a>
                     </div>
                 </div>
