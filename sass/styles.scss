@@ -813,9 +813,12 @@ RSVP form
   .rsvp-form {
     .rsvp-btn {
       padding: 15px 0;
-      border-radius: 3px;
+      //border-radius: 3px;
       width: 100%;
       font-size: 13px;
+      background-color: darkolivegreen;
+      outline-color: darkolivegreen;
+      border: 0;
     }
     .form-input-group {
       width: 100%;
@@ -824,19 +827,19 @@ RSVP form
       -moz-border-radius: 5px;
       -webkit-border-radius: 5px;
       border-radius: 5px;
-      border: solid 1px $keyline-color;
+      border: solid 1px darkolivegreen;
       text-align: left;
       position: relative;
 
       i {
-        color: $accent-color;
+        color: darkolivegreen;
         font-size: 14px;
       }
       i:after {
         content: "";
         height: 30px;
         width: 1px;
-        border-right: solid 1px $keyline-color;
+        border-right: solid 1px darkolivegreen;
         position: absolute;
         top: 50%;
         left: 30px;
@@ -848,6 +851,7 @@ RSVP form
         top: 50%;
         transform: translateY(-50%);
         margin-left: 20px;
+        color: darkolivegreen;
       }
       input {
         padding-left: 68px;
@@ -859,16 +863,16 @@ RSVP form
         border: none;
       }
       input::-webkit-input-placeholder {
-        color: $form-placeholder;
+        color: darkolivegreen;
       }
       input:-moz-placeholder {
-        color: $form-placeholder;
+        color: darkolivegreen;
       }
       input::-moz-placeholder {
-        color: $form-placeholder;
+        color: darkolivegreen;
       }
       input:-ms-input-placeholder {
-        color: $form-placeholder;
+        color: darkolivegreen;
       }
     }
   }
