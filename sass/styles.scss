@@ -283,7 +283,7 @@ Hero
     color: $txt-primary;
   }
   h1 {
-    color: black;
+    color: white;
     margin-bottom: 40px;
   }
   p.intro {
@@ -344,7 +344,7 @@ header {
       display: inline;
 
       a {
-        color: black;
+        color: white;
         padding-right: 25px;
 
         &:hover {
@@ -361,7 +361,7 @@ header {
       display: inline;
 
       a {
-        color: black;
+        color: white;
 
         &:hover {
           color: $accent-color;
