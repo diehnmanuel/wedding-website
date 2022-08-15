@@ -336,8 +336,18 @@ header {
   //.logo {
   //  display: inline-block;
   //}
-  .logo img {
-    height: 12rem;
+    /*For mobile and smaller screens*/
+  @media only screen and (max-width: 1250px){
+    //min-height: 1000px;
+    .logo img {
+      height: 8rem;
+    }
+  }
+    /*For desktop*/
+  @media (min-width: 1251px) {
+    .logo img {
+      height: 12rem;
+    }
   }
   ul.primary-nav {
     margin: 0 0 0 75px;
