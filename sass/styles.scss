@@ -277,7 +277,7 @@ Hero
   .rsvp-btn {
     color: white;
     font-size: 3rem;
-    font-family: "Font Awesome 6 Free";
+    font-family: "Times New Roman";
     //position: absolute;
     //bottom: 100px;
     //left: 50%;
@@ -333,9 +333,9 @@ header {
       margin-right: 20px;
     }
   }
-  //.logo {
-  //  display: inline-block;
-  //}
+  .logo {
+    display: inline-block;
+  }
     /*For mobile and smaller screens*/
   @media only screen and (max-width: 1250px){
     //min-height: 1000px;
