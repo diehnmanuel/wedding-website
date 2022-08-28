@@ -212,11 +212,11 @@ $(document).ready(function () {
         e.preventDefault();
         var data = $(this).serialize();
 
-        $('#alert-wrapper').html(alert_markup('info', '<strong>Just a second!</strong> We are saving your details.'));
+        $('#alert-wrapper').html(alert_markup('info', '<strong>Eine Sekunde!</strong> Deine Angaben werden gespeichert.'));
 
         if (MD5($('#invite_code').val()) !== 'a4e23b2609285cfd99de6d9832f21df1'
             && MD5($('#invite_code').val()) !== '2ac7f43695eb0479d5846bb38eec59cc') {
-            $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
+            $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Dein Einladungscode ist falsch.'));
         } else {
             $.post('https://script.google.com/macros/s/AKfycbyyM36W-gfO0r6Lep1nkDPVrj-3URoN_K5u1ODWQMFD18fqOQ_NNuaVnKBNa4rj-KCj3A/exec', data)
                 .done(function (data) {
