@@ -187,14 +187,14 @@ $(document).ready(function () {
             title: "Hochzeit Julia|Manuel",
 
             // Event start date
-            start: new Date('Sep 1, 2022 15:00'),
+            start: new Date('Sep 1, 2023 15:00'),
 
             // Event duration (IN MINUTES)
             // duration: 120,
 
             // You can also choose to set an end time
             // If an end time is set, this will take precedence over duration
-            end: new Date('Sep 3, 2022 10:00'),
+            end: new Date('Sep 3, 2023 10:00'),
 
             // Event Address
             address: 'Gutsstraße 24, 16818 Gnewikow',
