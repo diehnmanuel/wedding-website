@@ -197,7 +197,7 @@ $(document).ready(function () {
             end: new Date('Sep 3, 2023 10:00'),
 
             // Event Address
-            address: 'Gutsstraße 24, 16818 Gnewikow',
+            address: 'Wildau 19, 16244 Schorfheide',
 
             // Event Description
             description: "Bringt gute Laune mit! Bis dahin!"
